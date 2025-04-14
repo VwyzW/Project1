@@ -17,10 +17,10 @@ def show_game_instructions(player_name, rounds):
     print(f"欢迎 {player_name} 来到骰子大战! Welcome to Dice Wars!")
     print(f"本局游戏将进行 {rounds} 回合， 每回合玩家和机器人各自投掷两个骰子 This game will last for {rounds} rounds. In each round, the player and the robot will each roll two dice.")
     print("规则说明 Rules： ")
-    print("1. ")
-    print("2. ")
-    print("3. ")
-    print("4. ")
+    print("1. 投掷两个骰子，并将二者相加  Roll two dice and add them together")
+    print("2. 如果两个骰子点数相同，则将两个点数的和乘2  If the two dice have the same number, multiply the sum of the two numbers by 2")
+    print("3. 如果掷出了两个6点，除常规得分外，额外获得一个胜利点  If two 6 are rolled, you get an extra victory point in addition to the normal score.")
+    print("4. 每回合得分最高者获得胜利点，最终统计所有回合胜利点比较决出胜负The player with the highest score in each round will win the victory point, and the final victory points of all rounds will be compared to determine the winner.")
     print("=================================")
     time.sleep(2)
 
@@ -33,7 +33,7 @@ def play_game(rounds=10, player_name="player"):
     player_score = 0
     robot_score = 0
     player_bonus = 0
-    robot_bonus = 0  
+    robot_bonus = 0    
 
     for i in range(1, range+1):
         print(f"==== Round {i} ====")
