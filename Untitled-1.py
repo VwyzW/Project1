@@ -35,7 +35,7 @@ def play_game(rounds=10, player_name="player"):
     player_bonus = 0
     robot_bonus = 0    
 
-    for i in range(1, range+1):
+    for i in range(0, 20):
         print(f"==== Round {i} ====")
 
         print(f"{player_name} rolling the dice......")
@@ -47,7 +47,7 @@ def play_game(rounds=10, player_name="player"):
         if p_dice1 == 6 and p_dice2 == 6:
             player_score += 1
             player_bonus += 1
-            print("Super Rewards! {player_name} rolling a double 6, an extra round victory point is awarded! ")
+            print(f"Super Rewards! {player_name} rolling a double 6, an extra round victory point is awarded! ")
 
         print("Robot rolling the dice......")
         time.sleep(2)
@@ -58,7 +58,7 @@ def play_game(rounds=10, player_name="player"):
         if r_dice1 == 6 and r_dice2 == 6:
             robot_score += 1
             robot_bonus += 1
-            print("Super Rewards! Robot rolling a double 6, an extra round victory point is awarded! ")
+            print(f"Super Rewards! Robot rolling a double 6, an extra round victory point is awarded! ")
 
         if p_tota1 > r_tota1:
             player_score += 1
